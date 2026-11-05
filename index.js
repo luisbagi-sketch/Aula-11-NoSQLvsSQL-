@@ -27,6 +27,14 @@ app.get('/produtos', (req, res) => {
   res.json(produtos)
 })
 
+app.get('/produtos/:id', (req, res) => {
+  const produto = produtos.find(p => p._id === req.params.id)
+  if (!produto) {
+    return res.status(404).json({ mensagem: 'Produto não encontrado' })
+  }
+  res.json(produto)
+})
+
 app.listen(PORTA, () => {
   console.log(`Servidor rodando na porta ${PORTA}`)
 })
