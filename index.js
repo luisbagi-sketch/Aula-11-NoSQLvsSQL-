@@ -37,6 +37,14 @@ app.get('/produtos/:id', (req, res) => {
   res.json(produto)
 })
 
+app.get('/vazio', (req, res) => {
+  res.json([])
+})
+
+app.get('/erro', (req, res) => {
+  res.status(500).json({ mensagem: 'Erro no servidor' })
+})
+
 app.listen(PORTA, () => {
   console.log(`Servidor rodando na porta ${PORTA}`)
 })
