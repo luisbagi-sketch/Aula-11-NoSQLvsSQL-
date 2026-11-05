@@ -11,17 +11,22 @@ app.get('/', (req, res) => {
 
 const produtos = [
   {
-    _id: '665f1c2a9b1e8a0012a4b7c1',
-    nome: 'Café',
-    preco: 12.5,
-    tags: ['quente', 'manhã'],
-    fornecedor: { nome: 'CoopeCafé', cidade: 'Dourados' }
+    _id: '65f1a2b3c4d5e6f7a8b9c0d1',
+    nome: 'Caderno',
+    preco: 12.9,
+    fornecedor: { nome: 'Papelaria Central', cidade: 'Nova Andradina' }
   },
   {
-    _id: '665f1c2a9b1e8a0012a4b7c2',
-    nome: 'Pão de queijo',
-    preco: 4,
-    tags: ['salgado', 'manhã']
+    _id: '65f1a2b3c4d5e6f7a8b9c0d2',
+    nome: 'Caneta',
+    preco: 3.5,
+    ativo: true
+  },
+  {
+    _id: '65f1a2b3c4d5e6f7a8b9c0d3',
+    nome: 'Lápis',
+    preco: 2,
+    tags: ['escritório']
   }
 ]
 
